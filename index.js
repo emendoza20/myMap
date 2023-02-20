@@ -2,7 +2,7 @@ function myMap() {
   //debugger
   const suma = (array) => {
     let result = 0;
-    for (i = 0; i < array.length; i++) {
+    for (let i = 0; i < array.length; i++) {
       result += array[i];
     }
     return result
@@ -17,8 +17,12 @@ function myMap() {
    console.log(`array obtenido:${doble}`); 
 
    
-   const parejas = numeros.map (x=>[x,x])
+   const parejas = numeros.map (function (x){ return[x,x * 10]}
+   
+   )
+   //debugger
    console.log(`Pareja de numeros:${parejas}`)
+   console.log(parejas.length)
 
   //suma el total de elementos del array
 
